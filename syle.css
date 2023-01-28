@@ -1,0 +1,12 @@
+body {
+    display: flex;
+}
+aside {
+    width: 30%;
+}
+main {
+    width: 70%;
+}
+aside header div {
+    border-radius: 10% 30% 50% 70%;
+}
