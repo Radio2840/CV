@@ -8,5 +8,19 @@ main {
     width: 70%;
 }
 aside header div {
+    border: 2px double black;
     border-radius: 10% 30% 50% 70%;
+}
+ul,li {
+    list-style: none;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+body aside  {
+    background-color: rgb(255, 115, 0);
+}
+body header {
+    background-color: rgb(255, 38, 0);
 }
