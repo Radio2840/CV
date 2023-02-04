@@ -1,8 +1,67 @@
+body {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    -webkit-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+    box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+}
+aside {
+    background-color: rgb(2,46,87);
+    width: 32%;
+    color:white;
+}
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+aside header img {
+    height: 200px;
+    width: 200px;
+    border: 1px double rgb(1, 61, 117);
+    border-radius: 100%;
+}
+aside header p {
+    font-size: 30px;
+    text-align: center;
+}
+aside section img{
+    width: 45px;
+    height: 45px;
+}
+aside section a{
+    text-decoration: none;
+    color: white;
+}
+aside section h2{
+    background-color: rgb(3,37,71);
+    text-align: center;
+}
+.e {
+    margin: 0;
+    padding-left: 5px;
+}
+aside section ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 5px;
+}
+aside section ol{
+    list-style-type: upper-roman;
+    margin: 0;
+    padding-left: 5px;
+}
+main {
+    color:black;
+    width: 62%;
+    padding-left: 5px;
+}
+main article img{
+    height: 30px;
+    width: 30px;
+}
+main h1 {
+    background-color: rgb(239, 255, 255);
+}
+main article img{
+    height: 20px;
+    width: 20px;
 }
