@@ -1,3 +1,11 @@
+@keyframes dla_obrazu {
+    0%   { left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+  @keyframes dla_h2 {
+    0%   {background:none ; left:200px; top:0px;}
+    100% {background-color: rgb(3,37,71); left:0px; top:0px;}
+  }
 body {
     display: flex;
     margin-left: auto;
@@ -7,10 +15,23 @@ body {
     -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
     box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
 }
-aside {
-    background-color: rgb(2,46,87);
-    width: 32%;
-    color:white;
+aside section h2{
+    position: hidden;
+}
+h2{
+    position: relative;
+    animation-name: dla_h2;
+    animation-duration: 2s;
+}
+aside section h2{
+    position: relative;
+    background-color: rgb(3,37,71);
+    text-align: center;
+}
+aside header img{
+    position: relative;
+    animation-name: dla_obrazu;
+    animation-duration: 1.5s;
 }
 
 aside header img {
@@ -18,7 +39,18 @@ aside header img {
     width: 200px;
     border: 1px double rgb(1, 61, 117);
     border-radius: 100%;
+    position: relative;
 }
+
+
+
+aside {
+    background-color: rgb(2,46,87);
+    width: 32%;
+    color:white;
+}
+
+
 aside header p {
     font-size: 30px;
     text-align: center;
@@ -31,10 +63,7 @@ aside section a{
     text-decoration: none;
     color: white;
 }
-aside section h2{
-    background-color: rgb(3,37,71);
-    text-align: center;
-}
+
 .e {
     margin: 0;
     padding-left: 5px;
@@ -64,4 +93,110 @@ main h1 {
 main article img{
     height: 20px;
     width: 20px;
+}
+@media only screen and (max-width: 1000px){
+    body {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        -webkit-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+        box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+    }
+    aside {
+        background-color: rgb(2,46,87);
+        width: 32%;
+        color:white;
+    }
+    
+    aside header img {
+        height: 170px;
+        width: 170px;
+        border: 1px double rgb(1, 61, 117);
+        border-radius: 100%;
+    }
+    aside header p {
+        font-size: 30px;
+        text-align: center;
+    }
+    aside section img{
+        width: 22px;
+        height: 22px;
+    }
+    aside section a{
+        text-decoration: none;
+        color: white;
+    }
+    aside section h2{
+        background-color: rgb(3,37,71);
+        text-align: center;
+    }
+    .e {
+        margin: 0;
+        padding-left: 5px;
+    }
+    aside section ul{
+        list-style-type: none;
+        margin: 0;
+        padding-left: 5px;
+    }
+    aside section ol{
+        list-style-type: upper-roman;
+        margin: 0;
+        padding-left: 5px;
+    }
+}
+@media only screen and (max-width: 700px){
+    body {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        -webkit-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+        box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
+    }
+    aside {
+        background-color: rgb(2,46,87);
+        width: 32%;
+        color:white;
+    }
+    
+    aside header img {
+        height: 120px;
+        width: 120px;
+        border: 1px double rgb(1, 61, 117);
+        border-radius: 100%;
+    }
+    aside header p {
+        font-size: 30px;
+        text-align: center;
+    }
+    aside section img{
+        width: 22px;
+        height: 22px;
+    }
+    aside section a{
+        text-decoration: none;
+        color: white;
+    }
+    aside section h2{
+        background-color: rgb(3,37,71);
+        text-align: center;
+    }
+    .e {
+        margin: 0;
+        padding-left: 5px;
+    }
+    aside section ul{
+        list-style-type: none;
+        margin: 0;
+        padding-left: 5px;
+    }
+    aside section ol{
+        list-style-type: upper-roman;
+        margin: 0;
+        padding-left: 5px;
+    }
 }
