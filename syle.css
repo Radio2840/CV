@@ -1,3 +1,5 @@
+
+
 @keyframes dla_obrazu {
     0%   { left:200px; top:0px;}
     100% {left:0px; top:0px;}
@@ -94,12 +96,12 @@ main article img{
     height: 20px;
     width: 20px;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 768px){
     body {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 800px;
+        width: 642px;
         -webkit-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
         -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
         box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
@@ -147,30 +149,31 @@ main article img{
         padding-left: 5px;
     }
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 480px){
     body {
+        font-size: 10px;
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
+        width: 320px;
         -webkit-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
         -moz-box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
         box-shadow: 22px 5px 27px 8px rgba(66, 68, 90, 1);
     }
     aside {
         background-color: rgb(2,46,87);
-        width: 32%;
+        width: 40%;
         color:white;
     }
     
     aside header img {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
         border: 1px double rgb(1, 61, 117);
         border-radius: 100%;
     }
     aside header p {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
     }
     aside section img{
@@ -198,5 +201,9 @@ main article img{
         list-style-type: upper-roman;
         margin: 0;
         padding-left: 5px;
+    }
+    main article img{
+        height: 10px;
+        width: 10px;
     }
 }
